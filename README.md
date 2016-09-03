@@ -15,7 +15,7 @@ Dashboard is PHP project which involve 3 important parts.
   <li> <i>Comments are included into front-end part of this application. </i></li>
 </ol>
 <br>
-<b><i>Dashboard options -involve 7 submenus:</i></b><br>
+<b><i>Dashboard options -involve 7 submenus:</i></b>
 <ol>
   <li>Basic Info - user can insert and update information about own account and manage with specific functionalitites,</li>
   <li>Graphic display about all important aspects of account,</li>
