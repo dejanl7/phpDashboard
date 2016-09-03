@@ -33,7 +33,9 @@ class database{
 
 
 /*====================================================
-	While loop - fetch object from table...
+	While loop - fetch object from table. This function
+	is the same like function before - "select_table", 
+	but I wrote it for easier recognizing.
 ======================================================*/
 	public function while_loop($query){
 		$all = mysqli_query($this->database_connection, $query);
