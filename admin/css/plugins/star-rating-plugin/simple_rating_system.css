@@ -1,0 +1,46 @@
+#dv1, #dv0{
+	width: 408px;
+	border: 1px #ccc solid;
+	padding: 15px;
+	margin: auto;
+
+}
+
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+.simple_rating { 
+	border: none;
+	float: left;
+}
+
+.simple_rating > input { display: none; } 
+.simple_rating > label:before { 
+	margin: 5px;
+	font-size: 1.25em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+}
+
+.simple_rating > .half:before { 
+	content: "\f089";
+	position: absolute;
+}
+
+.simple_rating > label { 
+	color: #ddd; 
+	float: right; 
+}
+
+.simple_rating > input:checked ~ label, 
+.simple_rating:not(:checked) > label:hover,  
+.simple_rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+.simple_rating > input:checked + label:hover, 
+.simple_rating > input:checked ~ label:hover,
+.simple_rating > label:hover ~ input:checked ~ label, 
+.simple_rating > input:checked ~ label:hover ~ label { color: #FFED85;  }     
+

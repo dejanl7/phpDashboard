@@ -1,0 +1,1060 @@
+/*=======================
+	Custom CSS Content
+
+	0. Right Click Boxes Position and Preloader
+	1. Popup Message
+		1.1. Coursor Settings
+	  	1.2. Remodal Settings
+	2. General
+	3. Page "Index"
+		3.1 Media Screens for Index Page
+	4. Page "About"
+		4.1 Media Screens for About Page
+	5. Page "Gallery"
+		5.1 Media Screens for Gallery Page
+	6. Page "Preview"
+		6.1 Media Screens for Preview Page
+	7. Page "Contact"
+		7.1. Media Screens for Preview Page
+	8. Right Click Boxes
+	9. Menu: "Osnovni Podaci"
+		9.1. Media Screens for Left Menu, Page: "Osnovne Informacije"
+	10. Menu: "Info"
+	11. Menu: "Slike (fajlovi)"
+		11.1. Media Screens for Left Menu, Page: "Slike (fajlovi)"
+	12. Menu: "Komentari"
+	13. Menu: "Poruke"
+	14. Menu: "Kalendar"
+	15. Menu: "Imenik"
+	16. Page: "master_admin"
+	17. Page: "master_admin_messages"
+==========================*/
+
+
+/*=================================================
+	0. Right Click Boxes Position
+===================================================*/
+.clearfix {
+	position: absolute;
+	display:none;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/preloader/Preloader_3.gif) center no-repeat #fff;
+}
+
+.box, span, div {  -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+.navbar-header { padding-top: 10px; }
+/*Searching from Admin Page*/
+#searching-box::-webkit-scrollbar { width: 1em; }
+#searching-box::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+#searching-box::-webkit-scrollbar-thumb { background-color: #1d2120 ; outline: 1px solid slategrey; }
+#searching-box span { min-width: 450px !important; }
+#searching-box span a small { font-size: .7em; }
+
+#searching-result { margin-top: -12px; margin-left: 7%; width: 35%; max-height: 300px; }
+#searching-result #searching-box {  margin-top: -7px; width: 100%; max-height: 300px; overflow-y: scroll; background-color: #ecf0f1 ; padding: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+#searching-result #searching-box span { display: block; margin-bottom: 7px; }
+#searching-result #searching-box a { padding-left: 10px; color: #000000; font-weight: bold; background-color: transparent !important; padding-bottom: 10px; text-decoration: none; }
+#searching-result #searching-box span:hover { background-color: #ffffff; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+
+/*Searching from Other Company Pages*/
+#searching-result-company { margin-top: -12px; margin-left: 10%; width: 35%; max-height: 30px; }
+#searching-result-company #searching-box {  margin-top: -7px; width: 100%; max-height: 300px; overflow-y: scroll; background-color: #7f8c8d ; padding: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+#searching-result-company #searching-box span { display: block; margin-bottom: 7px; }
+#searching-result-company #searching-box a { padding-left: 10px; color: #000000; font-weight: bold; background-color: transparent !important; padding-bottom: 10px; text-decoration: none; }
+#searching-result-company #searching-box span:hover { background-color: #ffffff; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+
+
+	@media screen and (max-width: 767px){
+		#searching-result { margin-top: -12px; width: 87%; max-height: 300px; }
+		#searching-result-company { margin-top: -12px; margin-left: 3%; width: 80%; max-height: 300px; }
+	}
+	@media screen and (min-width: 768px) and (max-width: 939px){
+		#searching-result { margin-top: -12px; margin-left: 10%; width: 75%; max-height: 300px; }
+		#searching-result-company {  margin-top: -12px; margin-left: 7%; width: 75%; max-height: 300px; }
+	}
+	@media screen and (min-width: 940px) and (max-width: 1199px){
+		#searching-result-company {  margin-top: -12px; margin-left: 7%; width: 60%; max-height: 300px; }
+	}
+
+/*=================================================
+	1. Popup Message - create custom box fields
+===================================================*/
+.popup_msg{
+	position:absolute;
+	margin-left:100px;
+	z-index:100;
+	width:250px;
+	height:102px;
+	text-align:center;
+	color:#FF0000;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	display:none;
+}
+.popup_msg button.close-color-picker { position: absolute; width: 40px; margin-top: 54px; margin-left: 290px; }
+.popup_msg button.font-style-close { position: absolute; width: 40px; margin-top: 54px; margin-left: 370px; }
+.popup_msg button.close-show-hide {  position: absolute; width: 40px; margin-top: 3px; margin-left: 77px; } 
+.popup_msg button.close-color-picker { margin-top: 2px !important; margin-left: 105px !important; }
+#sub_article_marks_part, #sub_article_customers_marks_part, #sub_preview_comments_part { width: 77%; margin: 0 auto; }
+
+.change_color{
+	width: 200px;
+}
+textarea{
+	width:1100px;
+	height:550px;
+}
+.form-group{
+	width:350px;
+	
+}
+
+	/*=============================
+		1.1. Cursor Settings
+	===============================*/
+	.navbar-default, #second_div_headline, #second_div_content, .brand, .brand-name, #headlineBI, #hide_img, #bi_base_container, #headline2, #our_team_edit, .biog_img, #assortment, #assortment-mainDiv, #span_into_text, .cont-desc, .product-specifications, .product_desc, #company_location_headline, .all_address_info  { cursor: default; }
+
+	/*==============================
+		1.2. Remodal Settings
+	================================*/
+	/*.remodal { width: 450px !important; text-align: justify; }*/
+	.remodal { max-width: 1100px !important; text-align: left; }
+	.close { margin-top: -20px; font-size: 30px; color: black; font-weight: bold; }
+	.remodal-background { max-width: 1100px !important; }
+	.remodal-tinymc { width: 750px !important; }
+	iframe { height: 350px !important; }
+	.remodal_images { width: 900px!important; }
+	#carousel_uploaded_container { width: 550px !important; }
+	.remodal_change_about_image { width: 1100px !important; }
+	.remodal-new-product { width: 300px !important; }
+	#gallery_update_info_form { margin-top: -10px; }
+	.remodal_gallery_images  { width: 420px !important; }
+	.delete-more-articles { width: 700px !important; }
+	.contact-update { width: 400px !important; }
+	#preview_uploaded_container { width: 550px !important; }
+	#ask-admin-form h1 { font-size: 1.2em; margin-bottom: 25px; }
+	#ask-admin-form p { font-size: .9em; margin-bottom: 20px; }
+	#ask-admin-form button, input[type="submit"] { margin-top: 7px; }
+
+
+/*=================================================
+	2. GENERAL
+===================================================*/
+/* Settings For Mozzila Firefox Browser*/
+@-moz-document url-prefix() {
+  body { margin-top: -4px !important; }
+  #top_menu { margin-top: -9px !important; }
+}	
+/* Settings for Edge Browser */
+@supports (-ms-accelerator:true) {
+    body { margin-top: -4px !important; }
+  	#top_menu { margin-top: -9px !important; }
+}
+
+
+
+/*=================================================
+	3. Page "Index"
+===================================================*/
+h1#first_div_container{ margin-top: 30px; margin-bottom: 20px; }
+#caurosel_load .carousel-slider img { width: 100%; height:500px; }
+#second_div #second_div_headline { margin-bottom: 30px; margin-top: 10px; }
+#second_div_load { text-align: justify; line-height: 1.2em; }
+
+	/*===================================== 
+	 	3.1 Media Screens for Index Page
+	=======================================*/
+	@media screen and (max-width: 410px) {
+		#index_headline { display: none; }
+		#index_headline_container:after { display: block; white-space: pre; content: "\A "; }
+		#caurosel_load{ height: 240px; }
+		h1#first_div_container span { margin-top: 15px; margin-bottom: 15px; font-size: 16px !important; }
+		#caurosel_load .carousel-slider img { width: 100%; height: 240px !important; }
+		#second_div h1#second_div_headline  { font-size: 16px !important; }
+		#second_div_load { font-size: 12px !important; }
+	}
+
+	@media screen and (min-width: 411px) and (max-width: 664px) {
+		#index_headline { display: none; }
+		#index_headline_container:after { 	display: block; white-space: pre; content: "\A"; }
+		#caurosel_load{ height: 240px; }
+		h1#first_div_container span { margin-top: 17px; margin-bottom: 17px; font-size: 18px !important; }
+		#caurosel_load .carousel-slider img { width: 100%; height: 240px !important; }
+		#second_div h1#second_div_headline  { font-size: 18px !important; }
+		#second_div_load { font-size: 14px !important; }
+	}
+
+	@media screen and (min-width: 665px) and (max-width: 767px) {
+		#index_headline { display: none; }
+		#caurosel_load{ height: 240px; }
+		h1#first_div_container span { margin-top: 19px; margin-bottom: 19px; font-size: 19px !important; }
+		#caurosel_load .carousel-slider img { width: 100%; height: 240px !important; }
+		#second_div_load, #second_div h1#second_div_headline  { font-size: 19px !important; }
+		#second_div_load { font-size: 15px !important;  padding-left: 18px !important }
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		#index-first-big-part, .index-second-part { margin-left: 31px !important; }
+		#index_headline #index_headline_container { font-size: 33px !important; }
+		#caurosel_load{ height: 340px; }
+		h1#first_div_container span { margin-top: 20px; margin-bottom: 20px; font-size: 21px !important; }
+		#caurosel_load .carousel-slider img { width: 100%; height: 340px !important; }
+		#second_div_load, #second_div h1#second_div_headline  { font-size: 21px !important; }
+		#second_div_load { font-size: 16px !important; }
+	}
+
+
+
+/*=================================================
+	4. Page "About"
+===================================================*/
+#image_container { margin-top: 2em; }
+#about_first_big_box { padding-left: 5% !important; }
+.about_second_big_box { padding-left: 5% !important; }
+#our_team_container_for_font_color #our_team_edit { line-height: 1.5em; }
+#hide_img { padding-right: 3em; margin-bottom: 2em; }
+#store_our_team strong p { font-size: 20px; text-align: center; }
+.thumbnail23 { opacity: 0.5 }
+	/*===================================== 
+	 	4.1 Media Screens for About Page
+	=======================================*/
+		@media screen and (max-width: 410px) {
+			#headline { display: none; }
+			#headlineBI { font-size: 18px !important; }
+			#about_first_big_box { padding-left: 9% !important; }
+			.about_second_big_box { padding-left: 9% !important; }
+			#business_info_base #bi_base_container { font-size: 12px !important;  }
+			#headline2 #our_team_headline_container { font-size: 18px !important;  }
+			#our_team_container_for_font_color #our_team_edit { font-size: 12px !important; }
+			#store_our_team strong p { font-size: 12px; text-align: center; margin-bottom: 3px; }
+
+		}
+
+		@media screen and (min-width: 411px) and (max-width: 664px) {
+			#headline { display: none; }
+			#headlineBI { font-size: 21px !important; }
+			#business_info_base #bi_base_container { font-size: 14px !important;  }
+			#about_first_big_box { padding-left: 7% !important; }
+			.about_second_big_box { padding-left: 7% !important; }
+			#headline2 #our_team_headline_container { font-size: 19px !important;  }
+			#our_team_container_for_font_color #our_team_edit { font-size: 14px !important; }
+			#store_our_team strong p { font-size: 14px; text-align: center; margin-bottom: 3px; }
+		}
+
+		@media screen and (min-width: 665px) and (max-width: 767px) {
+			#headline { display: none; }
+			#headlineBI { font-size: 24px !important; }
+			#about_first_big_box { padding-left: 6% !important; }
+			.about_second_big_box { padding-left: 6% !important; }
+			#business_info_base #bi_base_container { font-size: 15px !important;  }
+			#headline2 #our_team_headline_container { font-size: 22px !important;  }
+			#our_team_container_for_font_color #our_team_edit { font-size: 15px !important; }
+			#store_our_team strong p { font-size: 15px; text-align: center; margin-bottom: 3px; }
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			#headline #headline_container { font-size: 45px !important; }
+			#box_business_info #headlineBI { font-size: 32px !important; }
+			#about_first_big_box { padding-left: 8% !important; }
+			.about_second_big_box { padding-left: 8% !important; }
+			#business_info_base #bi_base_container { font-size: 20px !important;  }
+			#headline2 #our_team_headline_container { font-size: 32px !important;  }
+			#our_team_container_for_font_color #our_team_edit { font-size: 20px !important; }
+			#store_our_team strong p { font-size: 20px; text-align: center; margin-bottom: 3px; }
+			
+		}
+
+
+
+
+/*=================================================
+	5. Page "Gallery" - Articles
+===================================================*/
+#carousel_container { margin-bottom: 25px; }
+#carousel_container span#assortment { padding-left: 15px; font-weight: bold; }
+h2#mainDiv_headline { text-align: center !important; font-weight: bold; margin-bottom: 30px; }
+#text_offer { margin-bottom: 25px !important; }
+.article-slider a p { color: #000000; padding-left: 3px; padding-top: 4px; font-size: 12px; }
+.article-slider:hover { cursor: move; }
+#gallery_container { width: 100%; }
+
+.gallery_images { max-width: 270px; width: 235px; height:260px; margin-left: 20px; }
+.gallery_images h2 {  margin-bottom: 15px; }
+.gallery_images .price-details .price-number span.rupees { font-size: 20px; margin-bottom: 5px; }
+.gallery_images .add-cart h4 a { font-size: 14px; }
+#pagination { text-align: center; }
+#clear_div { width: 100%; clear:both; }
+.article-slider a { text-decoration: none; }
+
+	/*===================================== 
+	 	5.1 Media Screens for Gallery Page
+	=======================================*/
+		@media screen and (min-width: 412px) and (max-width: 485px){
+			.gallery_images { margin-left: -3% !important; }
+		}
+
+		@media screen and (max-width: 410px) {
+			#gallery_headline { display: none; }
+			.content_top { width: 100% !important; height: 200px !important; }
+			#carousel_container span#assortment { font-size: 12px !important; font-weight: bold; }
+			#ocarousel_slider { margin-bottom: 30px !important; }
+			h2#mainDiv_headline { margin-bottom: 15px !important; }
+			h2#mainDiv_headline #assortment-mainDiv { font-size: 22px !important; font-weight: bold;  }
+			#text_offer { margin-bottom: 10px !important; }
+			.gallery_images { width: 100%; margin-left: 0%; }
+			#text_offer span#span_into_text { font-size: 15px !important; font-weight: bold; }
+			.gallery_images h2 {  margin-bottom: 10px !important; }
+			.gallery_images h2 a { font-size: 12px !important; font-weight: bold; }
+			.gallery_images .price-details .price-number { margin-top: 10px; font-weight: bold; }
+			.gallery_images .price-details .price-number span.rupees { font-size: 14px; }
+			.gallery_images .add-cart h4 a { font-size: 10px; margin-top: 10px; }
+			.article-slider a img { width: 90%; height: 120px; }
+		}
+
+		@media screen and (min-width: 411px) and (max-width: 664px) {
+			#gallery_headline { display: none; }
+			.content_top { width: 100% !important; height: 200px !important; }
+			#carousel_container span#assortment { font-size: 12px !important; font-weight: bold; }
+			#ocarousel_slider { margin-bottom: 30px !important; }
+			h2#mainDiv_headline { margin-bottom: 15px !important; }
+			h2#mainDiv_headline #assortment-mainDiv { font-size: 32px !important; font-weight: bold;  }
+			#text_offer { margin-bottom: 10px !important; }
+			#text_offer span#span_into_text { font-size: 20px !important; font-weight: bold; }
+			.gallery_images h2 { margin-bottom: 10px !important; }
+			.gallery_images h2 a { font-size: 12px !important; font-weight: bold; }
+			.gallery_images .price-details .price-number { margin-top: 10px; font-weight: bold; }
+			.gallery_images .price-details .price-number span.rupees { font-size: 14px; }
+			.gallery_images .add-cart h4 a { font-size: 12px; margin-top: 10px; }
+			.article-slider a img { width: 90%; height: 120px; }
+			.gallery_images { width: 100%; margin-left: 20%; }
+		}
+
+		@media screen and (min-width: 665px) and (max-width: 767px) {
+			#gallery_headline { display: none; }
+			#div_all_content { margin-left: 3px; }
+			#gallery_headline #gallery_headline_container { font-size: 24px !important; }
+			.content_top { width: 100% !important; height: 220px !important; }
+			#carousel_container span#assortment { font-size: 15px !important; font-weight: bold; }
+			#ocarousel_slider { margin-bottom: 30px !important; }
+			h2#mainDiv_headline { margin-bottom: 15px !important; }
+			h2#mainDiv_headline #assortment-mainDiv { font-size: 32px !important; font-weight: bold;  }
+			#text_offer { margin-bottom: 10px !important; }
+			#text_offer span#span_into_text { font-size: 20px !important; font-weight: bold; padding-left: 20px; }
+			.gallery_images h2 {  margin-bottom: 10px !important; }
+			.gallery_images h2 a { font-size: 14px !important; font-weight: bold; }
+			.gallery_images .price-details .price-number { margin-top: 10px; font-weight: bold; }
+			.gallery_images .price-details .price-number span.rupees { font-size: 14px; }
+			.gallery_images .add-cart h4 a { font-size: 12px; margin-top: 10px; }
+			.article-slider a img { width: 70%; height: 120px; }
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			#div_all_content { margin-left: 25px; }
+			#gallery_headline #gallery_headline_container { font-size: 26px !important; }
+			.content_top { width: 100% !important; height: 220px !important; }
+			#carousel_container span#assortment { font-size: 16px !important; font-weight: bold; }
+			#ocarousel_slider { margin-bottom: 30px !important; }
+
+			h2#mainDiv_headline { margin-bottom: 15px !important; }
+			h2#mainDiv_headline #assortment-mainDiv { font-size: 32px !important; font-weight: bold;  }
+			#text_offer { margin-bottom: 10px !important; }
+			#text_offer span#span_into_text { font-size: 20px !important; font-weight: bold; }
+
+			.gallery_images h2 {  margin-bottom: 10px !important; }
+			.gallery_images h2 a { font-size: 12px !important; font-weight: bold; }
+			.gallery_images .price-details .price-number { margin-top: 10px; font-weight: bold; }
+			.gallery_images .price-details .price-number span.rupees { font-size: 16px; }
+			.gallery_images .add-cart h4 a { font-size: 12px; margin-top: 10px; }
+		}
+
+
+
+
+/*=================================================
+	6. Page "Preview" 
+===================================================*/
+.article-desc { display: flex; justify-content: center; flex-direction: column; height: 50px; font-size: 28px; text-align: center; background-color: #ccc; margin-bottom: 1em; }
+#preview_info_div ul li { max-width: 320px !important; }
+#rating_for_showing ul > li { width: 100%; }
+#rating_for_showing > ul > li {  width: 400px;  margin-left: -30px; }
+.desc { margin-left: -2% !important; }
+#article-sidebar { display: flex; justify-content: center; flex-direction: column; height: 50px;color: black; text-align: center; background-color: #cccccc; margin-bottom: 1em; }
+#article-sidebar a { color: black; }
+.popular-products li.border-info { border-bottom: 3px solid #c9c9c9; margin-left: 10px; }
+li.border-info h2 { margin-bottom: 10px; }
+li.border-info h2 a { background-color: #cccccc; color: black;}
+#preview_marks_comment_form input.form-control { width: 70%; }
+#edit_article_container #edit_article_info { line-height: 1.55em; }
+.comments { margin-top: 30px; margin-bottom: 30px; padding-top: 30px; padding-bottom: 30px;  }
+.comments h2 { margin-bottom: 7px; color: #000000; text-transform: uppercase; font-weight: bold; }
+.comments-div {	width: 100%; min-height: 50px !important; background-color: #ccc; line-height: 1.4em; font-size: 14px; margin-top: 20px; padding-top: 10px; padding-bottom: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+.comments-div span { font-weight: bold; }
+.comments-div span small { font-size: 11px; }
+.comments-div .comment-content { margin-top: 10px; margin-bottom: 0px; padding-left: 10px; text-align: justify; color: #000000; }
+.label-default { position: absolute; display: block; }
+	
+	/*===================================== 
+	 	6.1 Media Screens for Peview Page
+	=======================================*/
+	@media screen and (min-width: 450px) and (max-width: 500px ) {
+		ul#etalage, .desc, .product_desc { margin-left: 20px !important; }
+	}
+	@media screen and (min-width: 501px) and (max-width: 580px ) {
+		ul#etalage { margin-left: 25%; }
+		.desc, .product_desc { margin-left: 0px; margin-top: 20px !important; }
+		li.etalage_thumb_active img { width: 270px !important; }
+	}
+	@media screen and (min-width: 581px) and (max-width: 650px ) {
+		ul#etalage { margin-left: 30% !important; }
+		.desc, .product_desc { margin-left: 30px !important; }
+		li.etalage_thumb { width: auto !important; }
+		li.etalage_thumb_active img { width: 300px !important; }
+	}
+	@media screen and (min-width: 651px) and (max-width: 720px ) {
+		ul#etalage { margin-left: 42% !important; }
+		.desc, .product_desc { margin-left: 30px !important; }
+		li.etalage_thumb { width: auto !important; }
+		li.etalage_thumb_active img { width: 300px !important; }
+	}
+	@media screen and (min-width: 721px) and (max-width: 767px ) {
+		ul#etalage { margin-left: 42% !important; }
+		.desc, .product_desc { margin-left: 30px !important; }
+		li.etalage_thumb { width: auto !important; }
+		img.etalage_thumb_image { width: 300px !important; }
+	}
+
+	@media screen and (max-width: 410px) {
+		#preview_headline_container { display: none; }
+		#edit_article_container #edit_article_info { font-size: 14px !important; line-height: 1.5em; }
+		.article-desc { font-size: 14px; width: 100%; font-weight: bold; }
+		ul.etalage { width: 99% !important; }
+		li.etalage_thumb_active { height: 415px !important; }
+		li.etalage_thumb_active img { width: 100% !important; height: 400px !important; }
+		li.etalage_magnifier, li.etalage_icon, li.etalage_hint, li.etalage_zoom_area { display: none !important; visibility: hidden !important; height: 0 !important;}
+		#rating_container { font-size: 9px; margin-left: -20px !important; }
+		.caption { float: left; position: relative; bottom: 10px; }
+		#comments_headline { font-size: 23px !important; font-weight: bold; }
+		.comment-content p { font-size: 12px !important; text-align: justify; }
+		.pagination > li a { font-size: 10px; text-align: center; }
+		#rightsidebar ul { width: 100%; margin: 0 auto; }
+	}
+
+	@media screen and (min-width: 411px) and (max-width: 664px) {
+		#preview_headline_container { display: none; }
+		#rightsidebar ul { width: 300px; margin: 0 auto; }
+		#edit_article_container #edit_article_info { font-size: 14px !important; line-height: 1.5em; }
+		.article-desc { font-size: 16px; width: 100%; font-weight: bold; }
+		li.etalage_magnifier, li.etalage_icon, li.etalage_hint, li.etalage_zoom_area { display: none !important; visibility: hidden !important; height: 0 !important;}
+		#rating_container { margin-left: 10px; }
+		.desc { display: block !important; width: 100% !important; }
+		#comments_headline { font-size: 27px !important; font-weight: bold; }
+		.comment-content p { font-size: 12px !important; text-align: justify; }
+		.pagination > li a { font-size: 12px; text-align: center; }
+		#rightsidebar ul { width: 100%; margin: 0 auto; }
+	}
+
+	@media screen and (min-width: 665px) and (max-width: 767px) {
+		#preview_headline_container { display: none; }
+		#preview_headline { font-size: 32px !important; }
+		#rightsidebar ul { width: 500px;  margin: 0 auto; }
+		#preview_info_div ul li img { max-width: 260px; }
+		#horizontalTab { padding-left: 3% !important; padding-right: 3% !important; }
+		#edit_article_container #edit_article_info { font-size: 15px !important; line-height: 1.5em; }
+		li.etalage_magnifier, li.etalage_icon, li.etalage_hint, li.etalage_zoom_area { display: none !important; visibility: hidden !important; height: 0 !important;}
+		#rating_container { margin-left: 0; }
+		.desc { display: block !important; width: 100% !important; padding-left: 10px !important; padding-top: 10px !important; }
+		#comments_headline { font-size: 27px !important; font-weight: bold; }
+		.comment-content p { font-size: 12px !important; text-align: justify; }
+		.pagination > li a { font-size: 12px; text-align: center; }
+		#rightsidebar ul { width: 100%; margin: 0 auto; }
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		#preview_headline { font-size: 35px !important; }
+		#rightsidebar ul { width: 600px;  margin: 0 auto; }
+		.desc { margin-left: 1% !important; }
+		#horizontalTab { padding-left: 3% !important; padding-right: 3% !important; }
+		#edit_article_container #edit_article_info { font-size: 16px !important; line-height: 1.5em; }
+		#comments_headline { font-size: 27px !important; font-weight: bold; }
+		.comment-content p { font-size: 12px !important; text-align: justify; }
+		.box { margin-left: 7% !important; }
+
+	}
+
+	@media screen and (min-width: 1200px) and (max-width: 1286px) {
+		.desc { padding-left: 0 !important; }
+		.box { padding-left: 10px !important; }
+	}
+
+
+
+/*=================================================
+	7. Page "Contact"
+===================================================*/
+.map-div { height: 500px; margin-bottom: 3%; position: center; }
+.all_address_info:last-child{ margin-bottom: 30px; }
+
+p.sending-form { margin-bottom: 30px; }
+input.btn-success, button.btn-warning { font-size: 16px; }
+button.btn-warning { margin-left: 15px; }
+input#insert_location { margin-top: 10px; }
+.empty-div { height: 14px; }
+
+
+	/*===================================== 
+	 	7.1 Media Screens for Contact Page
+	=======================================*/
+	@media screen and ( max-width: 410px){
+		#first_div_contact_text_container { display: none; }
+		.address-bar { height: 21px;  }
+		.first_div_contact_headline_container { display: block; }
+		h2#company_location_headline { font-size: 12px !important; }
+		#update_map_positions { font-size: 12px; width: 170px; margin-left: -51px; }
+		#press{ display: none; }
+		#address_info_div_load { width: 190px; font-size: 12px; margin-left: -14px; }
+		span#contact_us { visibility: hidden; }
+	}
+
+	@media screen and (min-width: 411px) and ( max-width: 664px){
+		#first_div_contact_text_container { display: none; }
+		.address-bar { height: 21px;  }
+		#first_div_contact h2#company_location_headline { font-size: 17px !important; }
+		h2#company_location_headline { font-size: 12px !important; }
+		input.btn-success, button.btn-warning {  width: 220px; font-size: 14px; }
+		#second_form form { font-size: 12px; margin-left: -20px; }
+		#second_form #hide_div form label {  padding-top: 20px; }
+		#second_form form #add-new-address-textarea { min-width: 310px;  }
+		#address_info_div_load { font-size: 12px !important; }
+		#third-form-send-message p.sending-form,
+		#third-form-send-message form label { font-size: 12px; }
+		p.sending-form { font-size: 14px; }
+	}
+
+	@media screen and (min-width: 665px) and ( max-width: 767px){
+		#first_div_contact_text_container { display: none; }
+		.address-bar { height: 21px;  }
+		#first_div_contact h2#company_location_headline { font-size: 19px !important; }
+		h2#company_location_headline { font-size: 14px !important; }
+		input.btn-success, button.btn-warning {  width: 240px; font-size: 16px; }
+		#second_form form { font-size: 14px; }
+		#second_form #hide_div form label {  padding-top: 20px; }
+		#second_form form #add-new-address-textarea { min-width: 390px;  }
+		#address_info_div_load { font-size: 14px !important; }
+		#third-form-send-message, #first_div_contact_text_container #first_div_contact_text { font-size: 15px; }
+		p.sending-form { font-size: 15px; }
+	}
+
+	@media screen and (min-width: 768px) and ( max-width: 1199px){
+		#first_div_contact_text_container { height: 150px; }
+		#first_div_contact_text { font-size: 25px !important; }
+		.address-bar { height: 23px; font-size: 15px; }
+		.address-bar { height: 21px;  }
+		#first_div_contact h2#company_location_headline { font-size: 19px !important; }
+		h2#company_location_headline { font-size: 14px !important; }
+		input.btn-success, button.btn-warning {  width: 240px; font-size: 16px; }
+		#second_form form { font-size: 15px; }
+		#second_form #hide_div form label {  padding-top: 22px; }
+		#second_form form #add-new-address-textarea { min-width: 390px;  }
+		#address_info_div_load { font-size: 15px !important; }
+		#third-form-send-message, #first_div_contact_text_container #first_div_contact_text { font-size: 15px; }
+		p.sending-form { font-size: 16px; }
+	}
+
+
+
+/*======================================
+	8. Right Click Boxes
+========================================*/
+.popup_msg .table, .clearfix { background-color: #ccc; cursor: pointer; }
+.boxes_text_style { font-size: 14px; font-weight: bold; }
+.edit_font_boxes table tr .apply_on { font-size: 14px; font-weight: bold; text-decoration: none; }
+.edit_font_boxes table tr td .btn-default { width: 190px; font-size: 12px; text-align: center; letter-spacing: 0.3px; }
+.btn-this-field { background-color: #3c8dbc !important; color: #fff; font-size: 12px !important; width: 170px; font-weight: bold; }
+.btn-this-field:hover { background-color: #F3E1F7; }
+.btn-default:hover { background-color: #F3E1F7; }
+.boxes_choose_color { width: 100%; background-color: #3c8dbc !important; color: #fff !important; letter-spacing: 1.2px; }
+.radio input.btn_show_hide { width: 100%; margin-left: -10px !important; }
+.submit_color_picker_buttons { margin-top: 15px; }
+.buttons_for_color_picker { margin-top: 20px; }
+.buttons_for_color_picker button.btn-default { margin-top: 5px; width: 65%; font-size: 12px; }
+
+
+
+/*======================================
+	9. Menu: "Osnovni Podaci"
+========================================*/
+section#basic-information { -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+#wrapper_basic_info { background-color: #ffffff;  }
+#headline-basic-info { position: relative; width: 100%; height: 200px; text-align: center; vertical-align: middle; }
+#headline-basic-info h1 { position: absolute; top: 50%; text-align: center; width: 100%; font-size: 32px; color: #000000;; font-weight: bold; }
+#headline-basic-info h1 span { box-shadow: 3px 3px #0f0f0f; background-color: #ffffff; padding: 7px; -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+#basic-info-main-nav #top_menu { background-color: rgba(29,33,32, 0.7); }
+#basic-info-main-nav #top_menu #top_menu_container ul > li a  { color: #ffffff; font-weight: bold; }
+a.navbar-brand { color: red; }
+#basic-information { margin-left: 3%; background-color: #ffffff; }
+.basic-info-company-info { width: 100%; font-size: 23px; font-weight: bold; display: block; padding-top: 3%; padding-bottom: 1%; }
+.table-basic-info th, .table-basic-info tr td, .table-basic-info tr td input { font-size: 0.9em; text-align: center; }
+.basic-info-fields { margin-bottom: 30px; }
+#new-password-menu { margin-bottom: 40px; }
+.inputs-for-password { display: block; margin-top: 20px; margin-bottom: 10px; }
+.basic-info-tags { margin-top: 3%; }
+.basic-info-tags form input:first-child { width: 100%; }
+.info-tabs { display: block; margin-top: 15px; }
+.info-tabs input.form-control { width: 50%; }
+.checkbox { padding-left: 5%; padding-top: 1%; }
+#check-send-email label { width: 80%; }
+#check-send-email input[type='checkbox']  { width: 10% !important; float: left; background-color: red; }
+.accept-basic-info-changes { width: 140px; font-size: 12px; margin-top: 10px; margin-left: 25%; margin-bottom: 30px; background-color: rgba(29,33,32, 0.7); color: #ffffff; -webkit-transition: background-color, font-weight 0.5s ease-in;	transition: background-color, font-weight 0.5s ease-in; -moz-transition: background-color, font-weight 0.5s ease-in; -o-transition: background-color, font-weight 0.5s ease-in; 
+}
+.accept-basic-info-changes:hover { background-color: rgba(29,33,32, 0.5); color: #ffffff; font-weight: bold; }
+form#form-basic-activities { margin-top: 20px; }
+form#basic-info-send-email-message input.accept-basic-info-changes { margin-top: 20px;  }
+#seo_description { margin-top: 30px; }
+form#form-basic-tags #key_words, form#form-basic-tags #seo_description { width: 97%; }
+
+
+	/*===================================== 
+	 	9.1 Media Screens for Left Menu 
+	 		Page: "Osnovni Podaci"
+	=======================================*/
+		@media screen and ( max-width: 410px){
+			#headline-basic-info { display: none; }
+			#basic-info-main-nav { margin-top: 40px; }
+			section#basic-information span { font-size: 12px; text-align: left; width: 100%; margin-bottom: 10px; }
+			section#basic-information input, section#basic-information label, .basic-info-fields, #new-password-insert, #new-password-insert label { width: 100%; font-size: 12px; text-align: justify; }
+			section#basic-information input.accept-basic-info-changes, section#basic-information button {  font-size: 11px !important; width: 100px; }
+			#seo_description { display: none; }
+			#key_words:after { display: block; white-space: pre; content: "\A Polje za \"Opis\" Vašeg \A poslovanja je nedostupno \A na ovoj rezoluciji. \A"; }
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			#headline-basic-info { display: none; }
+			#basic-info-main-nav { margin-top: 40px; }
+			section#basic-information span { font-size: 14px; text-align: left; width: 100%; margin-bottom: 10px; }
+			section#basic-information input, section#basic-information label, .basic-info-fields, #new-password-insert, #new-password-insert label { width: 100%; font-size: 12px; text-align: justify; }
+			section#basic-information input.accept-basic-info-changes{  font-size: 12px !important; width: 110px; }			
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			#headline-basic-info { display: none; }
+			#basic-info-main-nav { margin-top: 40px; }
+			section#basic-information span { font-size: 17px; text-align: left; width: 100%; margin-bottom: 10px; }
+
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			section#basic-information { margin-left: 3%; }
+			#headline-basic-info h1 span { font-size: 23px; }
+		}
+
+
+
+/*======================================
+	10. Menu: "Info"
+========================================*/
+#graph, #graph-contacts, #graph-accounts-blocked-available { margin-top: 30px; }
+.morris-barchart h1, .morris-pies h1 { margin-top: 30px; color: #000000; text-transform: uppercase; font-weight: bold; }
+.morris-pies h1 a, .morris-barchart h1 a  { text-decoration: none; color: #000000; }
+.morris-pies h1 a:hover, .morris-barchart h1 a:hover { color: blue; font-size: 1.2em; }
+#user-info { margin-left: 3%; background-color: #ffffff; }
+.morris-pies { margin-top: 70px; }
+.morris-hover-point { color: #000000 !important; font-weight: bold; }
+text tspan { font-size:  }
+	@media screen and (max-width: 340px){
+		.morris-pies h1 { margin-bottom: -60px; }
+	}
+
+
+
+/*======================================
+	11. Menu: "Slike (fajlovi)"
+========================================*/
+.all_box_page{ background-color: #ffffff; min-height: 500px; color: #000000; }
+.user-images-content h1 { font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 50px; font-size: 23px; color: #000000; }
+.count-img-files { margin-bottom: 30px; }
+.count-img-files h4 { font-size: 1.2em; margin-bottom: 20px; color: #000000; }
+.count-img-files ul li { font-size: 1em; margin: 3px; }
+
+.user-images-table { margin-top: 40px; color: #000000; }
+.user-images-table tr td { vertical-align: middle !important; }
+.table tr td a { text-decoration: none; color: #000000; }
+.table tr td a:hover { text-decoration: none; color: #cccccc; }
+.table tr td a img { width: 150px; height: 120px; }
+.table-responsive button { width: 70px; }
+.paginate { margin-top: 30px ;margin-bottom: 30px; width: 100%; }
+
+	/*===================================== 
+	 	11.1 Media Screens for Left Menu 
+	 		Page: "Slike (fajlovi)"
+	=======================================*/
+		@media screen and (min-width: 768px) and (max-width: 840px){
+			.all_box_page { margin-left: 3%; }
+		}
+
+		@media screen and ( max-width: 410px){
+			section.command-images h1 { font-size: 17px; }
+			.command-images h4, .count-img-files ul > li  { font-size: 14px; }
+			#images-files-delete-form input.button_delete, .table-responsive button { width: 65px; font-size: 12px; }
+			.table-responsive .table th { font-size: 15px; }
+			.table-responsive .table td { font-size: 14px; }
+			.table-responsive .table td img { min-width: 100px; }
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			section.command-images h1 { font-size: 19px; }
+			.command-images h4, .count-img-files ul > li  { font-size: 15px; }
+			#images-files-delete-form input.button_delete, .table-responsive button { width: 67px; font-size: 12px; }
+			.table-responsive .table th { font-size: 16px; }
+			.table-responsive .table td { font-size: 15px; }
+			.table-responsive .table td img { min-width: 110px; }
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			section.command-images h1 { font-size: 21px; }
+			.command-images h4, .count-img-files ul > li  { font-size: 16px; }
+			#images-files-delete-form input.button_delete, .table-responsive button { width: 71px; font-size: 14px; }
+			.table-responsive .table th { font-size: 17px; }
+			.table-responsive .table td { font-size: 16px; }
+			.table-responsive .table td img { min-width: 110px; }
+
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			section.command-images h1 { font-size: 21px; }
+			.command-images h4, .count-img-files ul > li  { font-size: 16px; }
+			#images-files-delete-form input.button_delete, .table-responsive button { width: 71px; font-size: 14px; }
+			.table-responsive .table th { font-size: 18px; }
+			.table-responsive .table td { font-size: 17px; }
+			.table-responsive .table td img { min-width: 120px; }
+		}
+
+
+/*======================================
+	12. Menu: "Komentari"
+========================================*/
+.command-comments { background-color: #ffffff; min-height: 500px; color: #000000; }
+.user-comments-content h1 { font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 50px; font-size: 23px; color: #000000; }
+.comments-table th { font-size: 15px; }
+table.comments-table tbody > tr > td { vertical-align: middle !important; margin: 0 auto; }
+.comments-table th:first-child { width: 1%; }
+.comments-table th:nth-child(2), .comments-table th:nth-child(3) { width: 7%; }
+.comments-table th:nth-child(4), .comments-table td:nth-child(4)  { width: 15%; vertical-align: middle;  }
+.comments-table td:nth-child(4) a img { margin: 0 auto; width: 100%; height: auto; }
+.comments-table th:nth-child(5) { width: 25%; }
+.comments-table th:nth-child(9) { width: 10%; }
+.comments-table { margin-top: 30px; }
+.comments-table tr td { vertical-align: text-top !important; text-align: center; }
+.comments-table tr td.comment { font-size: 12px; text-align: justify; }
+.comments-table td button { display: block; margin: 0 auto; margin-top: 5px; width: 100px; font-weight: bold; }
+
+	/*===================================== 
+	 	12.1 Media Screens for Left Menu 
+	 		Page: "Komentari"
+	=======================================*/
+		/* Media Screen for Table is Defined into Content point 10.1. Media Screens for Left Menu Page: "Slike (fajlovi)"*/
+
+		@media screen and ( max-width: 410px){
+			section.command-comments h1 { font-size: 17px !important; }
+			.command-comments h4, .count-img-comments ul > li  { font-size: 14px; }
+			#comments-select-form input.button_delete, .approve_comment, .disable_comment, .delete_comment { width: 65px !important; font-size: 14px; }
+			
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			section.command-comments h1 { font-size: 19px !important; }
+			.command-comments h4, .count-img-comments ul > li  { font-size: 15px; }
+			#comments-select-form input.button_delete, .approve_comment, .disable_comment, .delete_comment { width: 67px !important; font-size: 14px; }
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			section.command-comments h1 { font-size: 21px !important; }
+			.command-comments h4, .count-img-comments ul > li  { font-size: 16px; }
+			#comments-select-form input.button_delete, .approve_comment, .disable_comment, .delete_comment { width: 71px !important; font-size: 14px; }
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			section.command-comments h1 { font-size: 21px !important; }
+			.command-comments h4, .count-img-comments ul > li  { font-size: 17px; }
+			#comments-select-form input.button_delete, .approve_comment, .disable_comment, .delete_comment { width: 71px !important; font-size: 14px; }
+		}
+
+
+
+/*======================================
+	13. Menu: "Poruke"
+========================================*/
+.command-messages { background-color: #ffffff; min-height: 500px; color: #000000; }
+.user-messages-content h1 { font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 50px; font-size: 23px; color: #000000; }
+.message-options-submit { margin-bottom: 40px; }
+#messages-select-form { margin-top: 20px; }
+.messages-table th { font-size: 15px; }
+table.messages-table tbody > tr > td { padding-left: 3%; vertical-align: middle !important; margin: 0 auto; }
+.messages-table .hover-active:hover { color: #cccccc; }
+.messages-table th:first-child { width: 5.7%; padding-left: 3%; }
+.messages-table th:nth-child(2), .messages-table th:nth-child(3) { width: 7%; }
+.messages-table th:nth-child(4), .messages-table td:nth-child(4)  { width: 15%; vertical-align: middle;  }
+.messages-table th:nth-child(5) { width: 25%; }
+
+.messages-table td:nth-child(2), .messages-table td:nth-child(3), .messages-table td:nth-child(4), .messages-table td:nth-child(6), .messages-table td:nth-child(7) { font-size: .77em; }
+.messages-table { margin-top: 30px; }
+.messages-table tr td { vertical-align: text-top !important; text-align: center; }
+.messages-table tr td.message { font-size: 12px; text-align: justify; }
+.messages-table td button { display: block; margin: 0 auto; margin-top: 5px; width: 100px; font-weight: bold; }
+.unread_messages, .unread_comments { background-color: #ecf0f1; }
+.message-box { min-height: 500px; }
+.message-box-content { background-color: #ECF0F1; min-height: 200px; padding:3%; line-height: 1.4em; font-size: 15px; color: #000000; }
+.message-box-content, .reply { -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+table.messages-table tr:hover { background-color: #ecf0f1; }
+table.messages-table tbody  tr  td { vertical-align: middle !important; margin: 0 auto; }
+table.messages-table td:nth-child(2), 
+table.messages-table td:nth-child(4), 
+table.messages-table td:nth-child(6), 
+table.messages-table td:nth-child(7) { padding: 0; text-align: center; }
+table.messages-table td:nth-child(8) { padding-right: 5px; }
+button.answer, button.delete { margin-top: 10px; width: 90px; text-align: center; }
+button.delete_message { height: 30px; padding: 0; background-color: #e67e22; color: #ffffff; font-size: 12px; text-align: center; }
+small.message-time { position: absolute; top: 17px; right: 45%; font-size: 11px; font-weight: bold; }
+.message-content { margin-top: 30px; }
+#div-answer-content { background-color: red; }
+.message-info { display: block; width: 100%; margin-top: 30px; margin-bottom: 30px; }
+.message-info small {  padding-top: 20px; line-height: 1.7em; font-size: 11px; }
+.answer-field { min-height: 200px; margin-top: 20px; }
+.reply { min-height: 100px; margin-top: 20px; margin-bottom: 20px; background-color: #E4F1FE; padding: 3%; line-height: 1.4em; font-size: 15px; }
+.reply h3 { text-transform: uppercase; font-weight: bold; margin-bottom: 20px; font-size: 17px; }
+.reply h3 small { text-transform: none; font-size: 11px; font-weight: bold; color: #000000; vertical-align: middle; }
+.reply h3 small:before { content: "("; }
+.reply h3 small:after { content: ")"; }
+#send-answer { margin-left: 0px; margin-top: 20px; }
+.answer-alert {  width: 100%; height: 40px; margin-bottom:20px; text-align: center; margin: 0 auto; font-weight: bold; padding: 10px; }
+
+	/*===================================== 
+	  	13.1 Media Screens for Left Menu 
+	  		Page: "Poruke"
+	=======================================*/
+		/* Media Screen for Table is Defined into Content point 10.1. Media Screens for Left Menu Page: "Slike (fajlovi)"*/
+		@media screen and ( max-width: 410px){
+			.command-messages h1 { font-size: 17px !important; }
+			.command-messages h4, .count-img-messages ul > li  { font-size: 14px; }
+			#messages-select-form input.button_delete, button.delete_message { width: 65px !important; font-size: 14px; }
+			small.message-time { font-size: 9px; position: relative; left: 20%; }
+			.message-content { margin-top: 20px; font-size: 11px; }
+			.message-box-buttons button { width: 70%; font-size: 12px; }
+			.message-box-buttons button#answer_message { display: none; }
+			.message-box-buttons:after { font-size: 11px; display: block; white-space: pre; content: "\A \A \A \A Polje za \"Odogovor\"  na poruku \A je nedosupno  na ovoj rezoluciji. \A"; }
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			section.command-messages h1 { font-size: 19px !important; }
+			.command-messages h4, .count-img-messages ul > li  { font-size: 15px; }
+			#messages-select-form input.button_delete, button.delete_message { width: 67px !important; font-size: 14px; }
+			.message-content { margin-top: 25px; font-size: 12px; }
+			.message-box-buttons button { width: 45%; font-size: 12px; }
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			section.command-messages h1 { font-size: 21px !important; }
+			.command-messages h4, .count-img-messages ul > li  { font-size: 16px; }
+			#messages-select-form input.button_delete, button.delete_message { width: 71px !important; font-size: 14px; }
+			.message-content { margin-top: 40px; font-size: 14px; }
+			.message-box-buttons button { width: 45%; font-size: 14px; }
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			section.command-messages h1 { font-size: 21px !important; }
+			.command-messages h4, .count-img-messages ul > li  { font-size: 17px; }
+			#messages-select-form input.button_delete, button.delete_message { width: 71px !important; font-size: 14px; }
+		}
+
+
+/*======================================
+	14. Menu: "Kalendar"
+========================================*/
+.command-calendar { background-color: #ffffff; min-height: 500px; color: #000000; }
+.user-calendar-content h1 { font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 50px; font-size: 23px; color: #000000; }
+ #add-new-notification-form input { color: #000000; }
+ button#add-personal-specific-notification { width: 120px !important; padding: 7%; }
+ .fc-button-group button, .fc-left, .fc-right, .fc-center { font-size: 15px; }
+ .fc-center { margin-top: 10px; }
+	/*===================================== 
+	  	14.1 Media Screens for Left Menu 
+	  		Page: "Kalendar"
+	=======================================*/
+		@media screen and (min-width: 220px) and (max-width: 319px) {
+			#all-events, #add-new-event, #add-new-notification-form { position: relative; display: block; width: 120px; }
+			button#add-personal-specific-notification { width: 100px !important; }
+			.fc-button-group button, .fc-left, .fc-right, .fc-center { font-size: 10px; }
+			#fullcalendar-trash { width: 50% !important; }
+			.delete-notification { font-size: 11px !important; }
+		}
+
+
+		@media screen and (min-width: 320px) and ( max-width: 410px){
+			#all-events, #add-new-event, #add-new-notification-form { position: relative; display: block; width: 200px; }
+			button#add-personal-specific-notification { width: 180px !important; }
+			.fc-button-group button, .fc-left, .fc-right, .fc-center { font-size: 11px; }
+			#fullcalendar-trash { width: 50% !important; }
+			.delete-notification { font-size: 12px !important; }
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			#all-events, #add-new-event, #add-new-notification-form { position: relative; display: block; width: 300px; }
+			button#add-personal-specific-notification { width: 250px !important; }
+			.fc-button-group button, .fc-left, .fc-right, .fc-center { font-size: 12px; }
+			#fullcalendar-trash { width: 30% !important; }
+			.delete-notification { font-size: 12px !important; }
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			#all-events, #add-new-event, #add-new-notification-form { position: relative; display: block; width: 350px; }
+			button#add-personal-specific-notification { width: 300px !important; }
+			#fullcalendar-trash { width: 30% !important; }
+			.delete-notification { font-size: 12px !important; }
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			#all-events h4, button#add-personal-specific-notification, #add-new-event h4,  #add-new-notification-form, #add-new-notification-form input,  #add-new-notification-form  button   { font-size: 11px !important; }
+			#all-events, #add-new-event, #add-new-notification-form { width: 120px !important; }
+			button#add-personal-specific-notification { width: 110px !important; }
+		}
+
+
+/*======================================
+	15. Menu: "Imenik"
+========================================*/
+.command-phonebook { background-color: #ffffff; min-height: 500px; color: #000000; }
+.user-phonebook-content h3 { font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 10px; font-size: 23px; color: #000000; }
+.command-phonebook span { display:block; padding: 3%; text-align: justify; font-size: 15px; }
+#show-new-contact-form { text-align: center; }
+#show-new-contact-form button { font-size: 14px; margin-bottom: 30px; }
+#insert-new-contact { margin-top: 30px; }
+.phonebook-form-group { margin-bottom: 10px; }
+#phonebook-table { background-color: #ffffff; margin-top: 20px; }
+.fa-arrow-down { font-size: 14px; float: right; }
+.fa-arrow-down:hover { color: #000000; }
+
+.dataTables_length { width: 100%; }
+.dataTables_length select, option{ padding: 7px; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; }
+.dataTables_length, .dataTables_filter { margin-top: 10px; margin-bottom: 20px; }
+.dataTables_filter input { height: 30px; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; }
+.dataTables_info { margin-top: 30px; font-size: 12px; }
+
+#unilink-contact-table td { font-size: 14px; }
+button.delete-contact, button.edit-contact, input.delete-contact { width: 90%; height: 30px; padding: 0;  color: #ffffff; font-size: 12px; text-align: center; margin-bottom: 0px; float: left; margin: 0 auto; }
+button.delete-contact:hover, button.edit-contact:hover, input.delete-contact:hover { font-size: 15px; }
+#unilink-contact-table button.delete-contact, input.delete-contact { background-color: #e67e22; }
+#unilink-contact-table button.edit-contact { background-color: #7f8c8d; }
+#unilink-contact-table th:first-child,  #unilink-contact-table td:first-child  { width: 1%; padding-left: 1%; vertical-align: middle; text-align: center; margin: 0 auto; }
+#unilink-contact-table th:nth-child(2), #unilink-contact-table td:nth-child(2) { width: 15%; vertical-align: middle; }
+#unilink-contact-table th:nth-child(3), #unilink-contact-table td:nth-child(3) { width: 15%; vertical-align: middle; }
+#unilink-contact-table th:nth-child(4), #unilink-contact-table td:nth-child(4) { width: 15%; vertical-align: middle; }
+#unilink-contact-table th:nth-child(5), #unilink-contact-table td:nth-child(5) { width: 14%; vertical-align: middle; }
+#unilink-contact-table th:nth-child(6), #unilink-contact-table td:nth-child(6) { width: 14%; vertical-align: middle; }
+#unilink-contact-table th:nth-child(7), #unilink-contact-table td:nth-child(7) { width: 10%; vertical-align: middle; } 
+#unilink-contact-table th:nth-child(8), #unilink-contact-table td:nth-child(8) { width: 10%; vertical-align: middle; } 
+#unilink-contact-table td:nth-child(2) { font-size: 15px; font-weight: bold; }
+#unilink-contact-table td:nth-child(3), #unilink-contact-table td:nth-child(5) { background-color: #cccccc; color: #000000; font-weight: bold; font-size: 13px; }
+.modal-jumb-tr { height: 30px; }
+#options_container-phonebook { margin-bottom: 50px; background-color: #cccccc; color: #000000; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; padding-top: 10px; padding-bottom: 15px; }
+#options_container-phonebook label { font-size: 14px; }
+.dt-buttons { width: 20%; height: 100px; float: left; }
+a.dt-button { width:20%; text-decoration: none; color: #000000; background-color: #cccccc;  }
+a.dt-button span { width: 45%; height: 35px; border: 2px solid #ffffff; margin-top: 10px; padding: 7px; margin-right: 3%; background-color: #e67e22; color: #ffffff; float: left; text-align: center; font-weight: bold; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; }
+a.dt-button span:hover { font-size: 1.3em; }
+.dataTables_wrapper .previous, .dataTables_wrapper .next, .dataTables_wrapper .disabled { width: 100px; height: 30px; font-size: 12px; margin-bottom: 20px; background-color: #cccccc; color: #000000; }
+.table-responsive { border: none; margin-bottom: 30px; }
+#unilink-contact-table { border: 1px solid #cccccc; }
+.datatables-delete-options { margin-top: 10px !important; }
+.phonebook-options-submit input { max-width: 120px; float: right; }
+
+	/*===================================== 
+	  	15.1 Media Screens for Left Menu 
+	  		Page: "Imenik"
+	=======================================*/
+		@media screen and (min-width: 237px) and (max-width: 300px){
+			#phonebooks-select-form .dataTables_length { width: 99% !important; font-size: 9px !important; }
+			.dataTables_filter input { width: 70px !important; font-size: 10px !important; }
+			input#submit-phonebook { width: 100px !important;  }
+			#options_container-phonebook { margin-top: 20px; width: 150px !important; }
+			#options_container-phonebook label, #options_container-phonebook input, #options_container-phonebook select { font-size: 12px; }
+		}
+
+
+
+		@media screen and ( max-width: 410px){
+			.command-phonebook h3 { font-size: 15px; }
+			#show-new-contact-form button { margin-top: 14px; font-size: 11px; }
+			#insert-new-contact label, #insert-new-contact input { font-size: 11px; }
+			#phonebooks-select-form .dataTables_length { width: 80%; font-size: 12px; }
+			.dt-buttons { width: 100%; }
+			.dt-buttons a span { width: 30%; font-size: 12px; }
+			#unilink-contact-table_filter label { font-size: 12px; }
+			.dataTable thead th, .dataTable thead th i, .dataTable tbody td { font-size: 11px !important; }
+			#options_container-phonebook { margin-top: 20px; width: 200px; }
+			#options_container-phonebook label, #options_container-phonebook input, #options_container-phonebook select { font-size: 12px; }
+
+		}
+		@media screen and (min-width: 411px) and ( max-width: 664px){
+			.command-phonebook h3 { font-size: 16px; }
+			#show-new-contact-form button { margin-top: 15px; font-size: 12px; }
+			#insert-new-contact label, #insert-new-contact input { font-size: 12px; }
+			#phonebooks-select-form .dataTables_length { width: 80%; font-size: 12px; }
+			.dt-buttons { width: 100%; }
+			.dt-buttons a span { width: 20%; font-size: 14px; }
+			#unilink-contact-table_filter label { font-size: 14px; }
+			.dataTable thead th, .dataTable thead th i, .dataTable tbody td { font-size: 12px !important; }
+			#options_container-phonebook { margin-top: 20px; width: 300px; }
+			#options_container-phonebook label, #options_container-phonebook input, #options_container-phonebook select { font-size: 12px; }
+		}
+		@media screen and (min-width: 665px) and ( max-width: 767px){
+			.command-phonebook h3 { font-size: 16px; }
+			#show-new-contact-form button { margin-top: 15px; font-size: 14px; }
+			#insert-new-contact label, #insert-new-contact input { font-size: 14px; }
+			#phonebooks-select-form .dataTables_length { width: 80%; font-size: 12px; }
+			.dt-buttons { width: 100%; }
+			.dt-buttons a span { width: 20%; font-size: 14px; }
+			#unilink-contact-table_filter label { font-size: 14px; }
+			.dataTable thead th, .dataTable thead th i, .dataTable tbody td { font-size: 12px !important; }
+			#options_container-phonebook { margin-top: 20px; width: 200px; }
+			#options_container-phonebook label, #options_container-phonebook input, #options_container-phonebook select { font-size: 14px; }
+		}
+		@media screen and (min-width: 768px) and ( max-width: 1199px){
+			.command-phonebook h3 { font-size: 16px; }
+			#show-new-contact-form button { margin-top: 15px; font-size: 14px; }
+			#phonebooks-select-form .dataTables_length { width: 80%; font-size: 12px; }
+			.dt-buttons { width: 100%; }
+			.dt-buttons a span { width: 15%; font-size: 14px; }
+			#unilink-contact-table_filter label { font-size: 14px; }
+			.dataTable thead th, .dataTable thead th i, .dataTable tbody td { font-size: 12px !important; }
+			#options_container-phonebook label, #options_container-phonebook input, #options_container-phonebook select { font-size: 11px; }
+		}
+
+
+
+/*======================================
+	16. Page: "master_admin"
+========================================*/
+.user-info-content h5 { padding: 3%; color: #2c3e50; font-weight: bold; }
+.user-info-content { background-color: #ffffff;  }
+.user_operations { margin-top: 50px; margin-bottom: 30px; }
+.user_operations h1 { font-weight: bold; text-align: center; text-transform: uppercase; color: #000000; margin-bottom: 40px; font-size: 1.5em; }
+.blocked { background-color: #ecf0f1; }
+#users-table button { background-color: #e67e22; color: #ffffff; width: 90%; height: 30px; padding: 0;  color: #ffffff; font-size: 12px; text-align: center; margin-bottom: 0px; float: left; margin: 0 auto; } 
+#users-table button:hover { font-size: 15px; font-weight: bold; }
+#users-table th:nth-child(1), #users-table td:nth-child(1) { width: 5%; }
+#users-table th:nth-child(2), #users-table td:nth-child(2) { width: 20%; }
+#users-table th:nth-child(3), #users-table td:nth-child(3) { width: 10%; }
+#users-table th:nth-child(4), #users-table td:nth-child(4) { width: 10%; }
+#users-table th:nth-child(5), #users-table td:nth-child(5) { width: 10%; }
+#users-table th:nth-child(6), #users-table td:nth-child(6) { width: 20%; }
+#users-table th:nth-child(7), #users-table td:nth-child(7) { width: 15%; }
+#users-table th:nth-child(8), #users-table td:nth-child(8) { width: 10%; }
+#users-table tr:hover { background-color: #bdc3c7; color: #000000; font-weight: bold; }
+	@media screen and (max-width: 767px){
+		.user-info-content h5 { font-size: .7em; text-align: justify; }
+		.user-info-content { margin-top: 100px; }
+	}
+
+
+/*======================================
+	17. Page: "master_admin_messages"
+========================================*/
+.master_user-messages-content { margin-top: 50px; margin-bottom: 30px; -webkit-border-radius: 10px; border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; }
+.master_user-messages-content h1 { font-weight: bold; text-align: center; text-transform: uppercase; color: #000000; margin-top:20px; margin-bottom: 40px; font-size: 1.5em; }
+.master_user-messages-content { background-color: #ffffff;  }
+.master_user{ margin-top: 50px; margin-bottom: 30px; }
+.master_user-paginate-loader-users h1 { font-weight: bold; text-align: center; text-transform: uppercase; color: #000000; margin-bottom: 40px; font-size: 1.5em; margin-top: 30px; }
+	@media screen and (max-width: 767px){
+		.master_user-messages-content, .user-messages-content { margin-top: 100px; }
+	}
