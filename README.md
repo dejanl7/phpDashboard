@@ -12,8 +12,8 @@ Dashboard is PHP project which involve 3 important parts.
   <li> <i>User can change font color, background color, font size, font type for each page and each page part in a really simple way, </i> </li>
   <li> <i>User can change background image and show/hide some page part, </i></li>
   <li> <i>All options for editing page are available ON RIGHT CLICK on page part where user want to execute one or more options, </i></li>
-  <li> <i>Comments are included into front-end part of this application. </i></li>
-  <li> <i>Full responsive web aplication - using Bootstrap </i></li>
+  <li> <i>Comments are included into front-end part of this application, </i></li>
+  <li> <i>Full responsive web aplication - using Bootstrap. </i></li>
 </ol>
 <b><i>Dashboard options -involve 7 submenus:</i></b>
 <ol>
@@ -23,7 +23,7 @@ Dashboard is PHP project which involve 3 important parts.
   <li>Managing with comments - block, approve or delete,</li>
   <li>Managing with messages - delete, answer,</li>
   <li>Calendar events functionality - create schedule,</li>
-  <li>Phonebook - insert contacts manually or update contact from other users in network</li>
+  <li>Phonebook - insert contacts manually or update contact from other users in network.</li>
 </ol>
 <b>Database and SQL</b><br>
 You can find SQL file inside root of this application. There are defined all relations, foreign keys and indexes for this project. Take note that you need update database information and path. You can do it into two files: <b><i>admin/inc/classes/connection.php</i></b> and <b><i>admin/inc/init.php</i></b><br>
