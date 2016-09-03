@@ -26,4 +26,6 @@ Dashboard is PHP project which involve 3 important parts.
   <li>Phonebook - insert contacts manually or update contact from other users in network</li>
 </ol>
 <b>Database and SQL</b><br>
-You can find SQL file inside root of this application. There are defined all relations, foreign keys and indexes for this project. Take note that you need update database information and path. You can do it into two files: <b>admin/inc/classes/connection.php</b> and <b>admin/inc/init.php</b>
+You can find SQL file inside root of this application. There are defined all relations, foreign keys and indexes for this project. Take note that you need update database information and path. You can do it into two files: <b>admin/inc/classes/connection.php</b> and <b>admin/inc/init.php</b><br>
+When you insert SQL file into your database, user with role "master_admin" will be inserted automatically. That is account of the Major Admin. When you login (username: admin and pasword: admin123) you will se the third part of phpDashboard - master admin panel. You can change username or password for master admin only into database. <br>
+Every new registred user will have role "admin".
