@@ -6,7 +6,6 @@ Dashboard is PHP project which involve 3 important parts.
 <b>Admin area</b> involve two important parts. First part is related with editing website display and the second admin part represents dashboard functionality. <br><br>
 <b><i>Display Options</i></b>
 <ol>
-  <li> <i>Full responsive web aplication - using Bootstrap, </i></li>
   <li> <i>User can create own website, in a similar way like profile in facebook, </i></li>
   <li> <i>User has available five pages for editing, </i></li>
   <li> <i>User can insert own images and files</i></li>
@@ -14,6 +13,7 @@ Dashboard is PHP project which involve 3 important parts.
   <li> <i>User can change background image and show/hide some page part, </i></li>
   <li> <i>All options for editing page are available ON RIGHT CLICK on page part where user want to execute one or more options, </i></li>
   <li> <i>Comments are included into front-end part of this application. </i></li>
+  <li> <i>Full responsive web aplication - using Bootstrap </i></li>
 </ol>
 <b><i>Dashboard options -involve 7 submenus:</i></b>
 <ol>
