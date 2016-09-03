@@ -16,12 +16,12 @@ The idea of creating phpDashboard is to build unique place where companies can o
 <br>
 <b><i>Dashboard options -involve 7 submenus:</i></b><br>
 <ol>
-  <li>Basic Info - user can insert and update information about own account and manage with specific functionalitites</li>
-  <li>Graphic display about all important aspects of account</li>
-  <li>Managing with inserted images and files</li>
-  <li>Managing with comments - block, approve or delete</li>
-  <li>Managing with messages - delete, answer</li>
-  <li>Calendar events functionality - create schedule</li>
+  <li>Basic Info - user can insert and update information about own account and manage with specific functionalitites,</li>
+  <li>Graphic display about all important aspects of account,</li>
+  <li>Managing with inserted images and files,</li>
+  <li>Managing with comments - block, approve or delete,</li>
+  <li>Managing with messages - delete, answer,</li>
+  <li>Calendar events functionality - create schedule,</li>
   <li>Phonebook - insert contacts manually or update contact from other users in network</li>
 </ol>
-<br>
+<b>Database and SQL</b>
