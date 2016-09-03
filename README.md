@@ -7,7 +7,7 @@ The idea of creating phpDashboard is to build unique place where companies can o
 <ol>
   <li> <i>User can create own website, in a similar way like profile in facebook, </i></li>
   <li> <i>User has available five pages for editing, </i></li>
-  <li> <i>User can insert own images, information about company, information about own business, insert specific key words and description for SEO, </i></li>
+  <li> <i>User can insert own images and files</i></li>
   <li> <i>User can change font color, background color, font size, font type for each page and each page part in a really simple way, </i> </li>
   <li> <i>User can change background image and show/hide some page part, </i></li>
   <li> <i>All options for editing page are available ON RIGHT CLICK on page part where user want to execute one or more options, </i></li>
@@ -24,3 +24,4 @@ The idea of creating phpDashboard is to build unique place where companies can o
   <li>Calendar events functionality - create schedule</li>
   <li>Phonebook - insert contacts manually or update contact from other users in network</li>
 </ol>
+<br>
