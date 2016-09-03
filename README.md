@@ -25,3 +25,4 @@ The idea of creating phpDashboard is to build unique place where companies can o
   <li>Phonebook - insert contacts manually or update contact from other users in network</li>
 </ol>
 <b>Database and SQL</b>
+You can find SQL file inside root of this application. There are defined all relations, foreign keys and indexes for this project. Take note that you need update database information and path. You can to it into two files: <b>admin/inc/classes/connection.php</b> and <b>admin/inc/init.php</b>
