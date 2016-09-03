@@ -3,7 +3,7 @@ phpDashboard is project built into pure object oriented php. Before everything, 
 The idea of creating phpDashboard is to build unique place where companies can open public account and get personal website with a lot of editing options. That means dashboard is something like network. Appart from the mentioned, every network member has more interesting and usefull tools available inside into Admin panel.<br><br>
 Dashboard is PHP project which involve 3 important parts.
 <b>The first part</b> consists front-end pages where visitors can find companies and dashboard users can register and login into profile. <b>The Second part</b> is Admin area. When user register and login into account, dashboard will appear. <b>The third part</b> is Master Admin part. Master Admin part serve for managing with a network. There you can find all info about users. Also, you can block (deactivate) or allow (activate) approach to the network for some users. <br><br>
-<b>Admin area</b> involve two important parts. First part is related with editing website display. The second admin part represents dashboard functionality. <br><br>
+<b>Admin area</b> involve two important parts. First part is related with editing website display and the second admin part represents dashboard functionality. <br><br>
 <b><i>Display Options</i></b>
 <ol>
   <li> <i>User can create own website, in a similar way like profile in facebook, </i></li>
