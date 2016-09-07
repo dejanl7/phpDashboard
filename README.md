@@ -28,3 +28,6 @@ Dashboard is PHP project which involve 3 important parts.
 <b>Database and SQL</b><br>
 You can find SQL file inside root of this application. There are defined all relations, foreign keys and indexes for this project. Take note that you need update database information and path. You can do it into two files: <b><i>admin/inc/classes/connection.php</i></b> and <b><i>admin/inc/init.php</i></b><br>
 When you insert SQL file into your database, user with role "master_admin" will be inserted automatically. That is account of the Major Admin. When you login (username: admin and pasword: admin123) you will see the third part of phpDashboard - master admin panel. You can change username or password for master admin only into database. Note: you need to use md5 to hash password. All new registred users will have role "admin".
+
+<b>Plugins</b><br>
+This aplication consists a few plugins. All plugins except "Etalage" are free, or free to use with some notes. You need to buy Etalage if you want to use it into your application.
