@@ -17,7 +17,7 @@
 	}
 	#change_first_div_background{
 		color: <?php echo index_page::css("index_page","first_div_font_color", $base->clear_string($_GET['user_id'])); ?>;	
-		background-color: <?php echo index_page::css("index_page","first_div_background_color"); ?>;
+		background-color: <?php echo index_page::css("index_page","first_div_background_color", $base->clear_string($_GET['user_id'])); ?>;
 	}
 	#second_div{
 		color: <?php echo index_page::css("index_page","second_headline_font_color", $base->clear_string($_GET['user_id'])); ?>;	
