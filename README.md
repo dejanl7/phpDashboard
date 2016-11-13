@@ -1,4 +1,4 @@
-# phpDashboard <br> <p>For testing purposes, you can find example of this project in http://sdl-profile.com</p>
+# phpDashboard  <br> <p>For testing purposes, you can find example of this project in http://sdl-profile.com</p>
 phpDashboard is project built into pure object oriented php. Before everything, I need to mention one note. Front-end part of applicaton is written in Serbian language because it will be used for Serbian market. Completelly back-end part and code comments are written in English. Everything that you need to do if you plan to use this application is to change html text into files and set up your database settings.
 The idea of creating phpDashboard is to build unique place where companies can open public account and get personal website with a lot of editing options. That means dashboard is something like network. Appart from the mentioned, every network member has more interesting and usefull tools available inside into Admin panel.<br><br>
 Dashboard is PHP project which involve 3 important parts.
